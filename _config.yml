@@ -6,14 +6,14 @@ title: "Dipta Paul"
 title_separator: "-"
 description: "Academic portfolio of Dipta Paul"
 
-# IMPORTANT: These two lines are the KEY FIX
+# ✅ USER PAGE CONFIG (CORRECT)
 url: "https://diptapauledu.github.io"
-baseurl: "/diptapauldu.github.io"
+baseurl: ""
 
-repository: "diptapauldu/diptapauldu.github.io"
+repository: "diptapauledu/diptapauldu.github.io"
 
 # ===============================
-# AUTHOR SETTINGS (SIDEBAR)
+# AUTHOR SETTINGS
 # ===============================
 author:
   name: "Dipta Paul"
@@ -29,17 +29,9 @@ author:
   orcid: ""
 
 # ===============================
-# THEME (GITHUB PAGES SAFE)
+# THEME (SAFE)
 # ===============================
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
-# ===============================
-# SITE BEHAVIOR
-# ===============================
-breadcrumbs: false
-future: true
-read_more: "disabled"
-words_per_minute: 160
 
 # ===============================
 # FILE HANDLING
@@ -62,12 +54,6 @@ exclude:
 # ===============================
 markdown: kramdown
 highlighter: rouge
-excerpt_separator: "\n\n"
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  toc_levels: 1..6
 
 # ===============================
 # COLLECTIONS
@@ -75,31 +61,11 @@ kramdown:
 collections:
   publications:
     output: true
-    permalink: /publications/:path/
   projects:
     output: true
-    permalink: /projects/:path/
 
 # ===============================
-# DEFAULT LAYOUTS
-# ===============================
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-
-# ===============================
-# PLUGINS (GITHUB SAFE ONLY)
+# PLUGINS
 # ===============================
 plugins:
   - jekyll-feed
