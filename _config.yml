@@ -5,8 +5,11 @@ locale: "en-US"
 title: "Dipta Paul"
 title_separator: "-"
 description: "Academic portfolio of Dipta Paul"
-url: "https://diptapauldu.github.io"
-baseurl: ""
+
+# IMPORTANT: These two lines are the KEY FIX
+url: "https://diptapauledu.github.io"
+baseurl: "/diptapauldu.github.io"
+
 repository: "diptapauldu/diptapauldu.github.io"
 
 # ===============================
@@ -26,7 +29,7 @@ author:
   orcid: ""
 
 # ===============================
-# THEME (FIXED)
+# THEME (GITHUB PAGES SAFE)
 # ===============================
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
@@ -96,7 +99,7 @@ defaults:
       author_profile: true
 
 # ===============================
-# PLUGINS (GITHUB SAFE)
+# PLUGINS (GITHUB SAFE ONLY)
 # ===============================
 plugins:
   - jekyll-feed
